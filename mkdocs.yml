@@ -1,0 +1,10 @@
+site_name: Biblioteca API
+
+theme:
+  name: material
+  language: es
+
+nav:
+  - Inicio: index.md
+  - Instalación: instalacion.md
+  - Uso: uso.md
