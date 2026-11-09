@@ -27,6 +27,10 @@ type: string
 
 
 
+
+
+# PENDIENTE: Documentar GET /api/libros/{id}
+# Incluir parametro id (path, requerido, entero) y respuestas 200 y 404.
 /api/libros/{id}:
 get:
 summary: "Obtiene un libro por su identificador"
@@ -42,5 +46,18 @@ description: "Libro encontrado"
 "404":
 description: "Libro no encontrado"
 
-# PENDIENTE: Documentar GET /api/libros/{id}
-# Incluir parametro id (path, requerido, entero) y respuestas 200 y 404.
+
+/:
+get:
+summary: "Obtiene un libro por su identificador"
+parameters:
+name: id
+in: path
+required: true
+schema:
+type: integer
+responses:
+"200":
+description: "Libro encontrado"
+"404":
+description: "Libro no encontrado"
